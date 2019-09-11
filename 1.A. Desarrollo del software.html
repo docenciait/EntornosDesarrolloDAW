@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html dir="ltr" xml:lang="es" class="yui3-js-enabled" lang="es"><head>
+    <title>1.A. Desarrollo del software.</title>
+    <link rel="shortcut icon" href="https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/theme/image.php/boost/theme/1564653989/favicon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="moodle, 1.A. Desarrollo del software.">
+<link rel="stylesheet" type="text/css" href="1.A.%20Desarrollo%20del%20software_files/yui_combo.css"><script charset="utf-8" id="yui_3_17_2_1_1568198205146_8" src="1.A.%20Desarrollo%20del%20software_files/yui_combo_003.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1568198205146_18" src="1.A.%20Desarrollo%20del%20software_files/yui_combo.js" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="1.A.%20Desarrollo%20del%20software_files/all.css">
+<link rel="stylesheet" type="text/css" href="1.A.%20Desarrollo%20del%20software_files/print.css">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala","sesskey":"l6cDavuk36","themerev":"1564653989","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1564653989","admin":"admin","svgicons":true,"usertimezone":"Europa\/Madrid","contextid":16962};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/theme\/yui_combo.php?m\/1564653989\/","combine":true,"comboBase":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/theme\/yui_combo.php?","ext":false,"root":"m\/1564653989\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_xp-form":{"requires":["base","node","event","handlebars","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]},"moodle-atto_wordimport-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1564653989\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/lib\/javascript.php\/1564653989\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/lib\/javascript.php\/1564653989\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="1.A.%20Desarrollo%20del%20software_files/first.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="1.A.%20Desarrollo%20del%20software_files/jquery-3.js"></script></head>
+
+<body id="page-mod-book-print" class="format-topics  path-mod path-mod-book gecko dir-ltr lang-es yui-skin-sam yui3-skin-sam aulavirtual3-educa-madrid-org--ies.alonsodeavellan.alcala pagelayout-embedded course-61 context-16962 cmid-11153 category-17 category-12  jsenabled">
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Saltar a contenido principal</a>
+</div><script type="text/javascript" src="1.A.%20Desarrollo%20del%20software_files/yui_combo_002.js"></script><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div><script type="text/javascript" src="1.A.%20Desarrollo%20del%20software_files/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<div id="page">
+    <div id="page-content">
+        <div role="main"><span id="user-notifications"></span><span id="maincontent"></span><a onclick="window.print();return false;" class="hidden-print" href="#"><img class="icon icon" alt="Imprimir el Libro Completo" title="Imprimir el Libro Completo" src="1.A.%20Desarrollo%20del%20software_files/book.svg">Imprimir el Libro Completo</a>    <a name="top"></a>
+    <h1>1.A. Desarrollo del software.</h1>    <p class="book_summary"></p>
+    <div class="book_info"><table>
+    <tbody><tr>
+    <td>Sitio:</td>
+    <td><a href="https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala">ALONSO DE AVELLANEDA</a></td>
+    </tr><tr>
+    <td>Curso:</td>
+    <td>Entornos de desarrollo</td>
+    </tr><tr>
+    <td>Libro:</td>
+    <td>1.A. Desarrollo del software.</td>
+    </tr><tr>
+    <td>Imprimido por:</td>
+    <td>Iván Jiménez Utiel</td>
+    </tr><tr>
+    <td>Día:</td>
+    <td>miércoles, 11 de septiembre de 2019, 12:34</td>
+    </tr>
+    </tbody></table></div>
+
+    <div class="book_toc_numbered"><a name="toc"></a><h2>Tabla de contenidos</h2><ul><li><a title="1. Software y programa. Tipos de software." href="#ch667">1. Software y programa. Tipos de software.</a></li><li><a title="2. Desarrollo del software." href="#ch657">2. Desarrollo del software.</a><ul><li><a title="2.1. Análisis." href="#ch659">2.1. Análisis.</a></li><li><a title="2.2. Diseño." href="#ch661">2.2. Diseño.</a></li><li><a title="2.3. Codificación." href="#ch655">2.3. Codificación.</a></li><li><a title="2.4. Pruebas." href="#ch662">2.4. Pruebas.</a></li><li><a title="2.5. Verificación en cliente / Explotación." href="#ch656">2.5. Verificación en cliente / Explotación.</a></li><li><a title="2.6. Mantenimiento." href="#ch658">2.6. Mantenimiento.</a></li><li><a title="2.7. Documentación." href="#ch663">2.7. Documentación.</a></li></ul></li><li><a title="3. Relación hardware-software." href="#ch666">3. Relación hardware-software.</a></li><li><a title="4. Ciclos de vida del software." href="#ch660">4. Ciclos de vida del software.</a></li><li><a title="5. Herramientas de apoyo al desarrollo del software." href="#ch664">5. Herramientas de apoyo al desarrollo del software.</a></li><li><a title="6. Frameworks." href="#ch665">6. Frameworks.</a></li></ul></div><div class="book_chapter"><a name="ch667"></a><h2>1. Software y programa. Tipos de software.</h2><div align="justify"><p style="text-align: justify;">Un ordenador se compone de dos partes bien diferenciadas: hardware y software.</p>
+<p>El <b>software </b>es el conjunto de programas informáticos que actúan sobre el hardware para realizar una tarea específica.<br></p><div>
+Según su función se distinguen <b>tres tipos de software</b>: software de sistema, software de programación y aplicaciones.</div>
+<div style="text-align: center;">
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-TiposDeSw.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title=" Procedencia:
+ Material del módulo Entornos de desarrollo a distancia del MEC" height="518" width="570"><br>
+</div><div><br></div><div>
+
+<table cellspacing="0" cellpadding="5" border="1" width="100%">
+ <tbody>
+<tr> 
+<td width="168" valign="top"><br>
+<div style="text-align: center;">
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-SistOp.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia: 
+lewing@isc.tamu.edu Larry Ewing and The GIMP. CC0.
+https://es.wikipedia.org/wiki/Portal:Linux#/media/File:NewTux.svg" height="120" width="100"><br></div>
+  <p> </p>
+  </td>
+  <td width="408" valign="top">
+  <p>El <b>software de sistema </b>es el software base que ha de estar 
+instalado  y configurado en nuestro ordenador para que las aplicaciones 
+puedan  ejecutarse y funcionar. El principal tipo de software de sistema
+ es el  sistema operativo. Algunos ejemplos de sistemas operativos son: 
+Windows,  Linux, Mac OS X ...</p>
+  </td>
+ </tr>
+
+ <tr>
+  <td width="168" valign="top"><div style="text-align: center;">
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-SoftProg.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title=" Procedencia:
+ Captura de pantalla, CC BY-SA" height="203" width="148"><br>
+</div>
+  <p> </p>
+  </td>
+  <td width="408" valign="top">
+  <p>El <b>software de programación</b>
+es el conjunto de herramientas que nos permiten desarrollar programas informáticos. <br></p><p>Algunos ejemplos son los editores de texto/código, compiladores, intérpretes,
+entornos de desarrollo integrados (IDE).</p>
+  </td>
+ </tr>
+
+ <tr>
+  <td width="168" valign="top"><div style="text-align: center;">
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-AppInf.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title=" Procedencia:
+ Captura de pantalla, CC BY-SA" height="165" width="148"><br>
+</div>
+  <p></p>
+  </td>
+  <td width="408" valign="top">
+  <p></p><p>Las <b>aplicaciones informáticas</b> son un
+conjunto de programas que tienen una finalidad más o menos concreta. </p>
+
+Son ejemplos de aplicaciones los procesadores de textos, las hojas de 
+cálculo, el software para reproducir música, los videojuegos, etc.<p></p>
+  </td>
+ </tr>
+
+</tbody></table>
+<br></div><div><p>Un <b>programa </b>es un conjunto de instrucciones 
+escritas en un lenguaje de programación, que indican a la máquina que 
+operaciones realizar sobre unos determinados
+datos.</p>
+
+<p>A lo largo de esta primera unidad se tratarán los conceptos
+fundamentales de software y las fases del llamado ciclo de vida de una aplicación
+informática.</p>
+
+<p>También aprenderás a distinguir los diferentes lenguajes de 
+programación y los procesos que ocurren hasta que el programa funciona y
+ realiza la acción deseada.</p><br></div><br></div></div><div class="book_chapter"><a name="ch657"></a><h2>2. Desarrollo del software.</h2><div align="justify">
+<p>Entendemos por Desarrollo de Software todo el proceso que ocurre 
+desde que se concibe una idea hasta que un programa está implementado en
+ el ordenador y funcionando.</p>
+
+<p>El proceso de desarrollo, que en un principio puede parecer una tarea
+ simple, consta de una serie de pasos de obligado cumplimiento, pues 
+sólo así podremos garantizar que los programas creados son eficientes, 
+fiables, seguros y responden a las necesidades de los usuarios finales 
+(aquellos que van a utilizar el programa).</p>
+
+<p>Como veremos con más detenimiento a lo largo de la unidad, el 
+desarrollo de software es un proceso que conlleva una serie de pasos. 
+Genéricamente, al conjunto de pasos se denomina ciclo de vida del 
+proyecto. Estos pasos son los siguientes:</p><p style="text-align: center;">
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-FasesSw.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+Trabajo propio, CC BY-SA" height="57" width="571">&nbsp; <br></p><p>Es 
+muy importante dedicar los recursos necesarios en las primeras etapas 
+del desarrollo del software. Avanzar a las etapas finales sin un 
+análisis y diseño libres de errores, implicará que se propaguen durante 
+toda la vida del proyecto y como consecuencia el producto obtenido sea 
+de mala calidad.</p>
+
+Estas etapas son:</div><div align="justify">
+<table cellspacing="0" cellpadding="5" border="1" width="100%"> <tbody>
+<tr>
+  <td width="180" valign="top">
+  <p align="center"><b>Fase</b></p>
+  </td>
+  <td width="400" valign="top">
+  <p align="center"><b>Tareas</b></p>
+  </td>
+ </tr>
+
+ <tr>
+  <td width="180" valign="top">
+  <p style="text-align: center;"><b>Análisis</b></p><div style="text-align: center;">
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-Analisis.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://www.freepik.es/foto-gratis/conceptos-de-diseno-web-con-el-fondo-borroso_902858.htm
+Foto de Fondo creado por creativeart" height="100" width="150">&nbsp; <br></div></td>
+  <td width="400" valign="top">
+  <ul><p>Analizar las necesidades de la aplicación a generar.</p><p>Consensuar
+ todo lo que se requiere del sistema, siendo el punto de partida para 
+las siguientes etapas. Estos requisitos “deberían” ser cerrados para el 
+resto del desarrollo.</p></ul>
+  </td>
+ </tr>
+
+  <tr>
+  <td width="180" valign="top">
+  <p style="text-align: center;"><b>Diseño</b></p><div style="text-align: center;">
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-Diseno.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://www.freepik.es/vector-gratis/composicion-de-desarrollo-de-diseno_2873777.htm
+Vector de Diseño creado por macrovector" height="150" width="150"><br><p></p><p></p>
+  </div></td>
+  <td width="400" valign="top">
+  <ul><p>Realizar los algoritmos necesarios para el cumplimiento de los requisitos planteados en el proyecto.</p><p>Determinar las herramientas a utilizar en la codificación.</p></ul>
+  </td>
+  </tr>
+
+ <tr>
+  <td width="180" valign="top">
+  <p style="text-align: center;"><b>Codificación</b></p><div style="text-align: center;">&nbsp;
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-Codificacion.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title=" Procedencia:
+ Captura de pantalla, CC BY-SA" height="64" width="228"><br></div><p></p>
+  </td>
+  <td width="400" valign="top">
+  <ul><p>Implementar el código fuente y obtiener los ficheros en código máquina que es capaz de entender el ordenador.</p></ul>
+  </td>
+ </tr>
+
+ <tr>
+  <td width="180" valign="top">
+  <p style="text-align: center;"><b>Pruebas</b></p><div style="text-align: center;">
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-Pruebas.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://www.freepik.es/vector-gratis/mano-sujetando-un-lapiz-y-rellenando-un-formulario_1082297.htm 
+Vector de Fondo creado por freepik" height="150" width="150">&nbsp;&nbsp;
+<br></div><p></p>
+  </td>
+  <td width="400" valign="top">
+  <ul><p>Los elementos, ya programados, se enlazan para componer el 
+sistema y se comprueba que funciona correctamente y que cumple con los 
+requisitos, antes de ser entregado al usuario final.</p></ul>
+  <p>&nbsp;</p>
+  </td>
+ </tr>
+
+ <tr>
+  <td width="180" valign="top">
+  <p style="text-align: center;"><b><b>Verificación en cliente / </b>Explotación<br></b></p><div style="text-align: center;">&nbsp; <img src="1.A.%20Desarrollo%20del%20software_files/T01-Explotacion.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://www.freepik.es/vector-gratis/ilustracion-del-sello-aprobado_2945111.htm 
+Vector de Banner creado por rawpixel.com" height="150" width="150"><br></div><p></p>
+  </td>
+  <td width="400" valign="top">
+  <ul><p>Es la fase donde el usuario final utiliza el&nbsp;  sistema en 
+un entorno de preproducción o pruebas. Si todo va correctamente, el 
+producto estará listo para ser pasado a producción.</p></ul>
+  </td>
+ </tr>
+
+ <tr>
+  <td width="180" valign="top">
+  <p style="text-align: center;"><b>Mantenimiento</b></p><div style="text-align: center;">
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-Mantenimiento.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://es.wikipedia.org/wiki/Portal:Mantenimiento#/media/File:Under_construction_icon-orange.svg 
+De File:Under construction icon-blue.svg: DsmuratDerivative work: Pedroca cerebralFile:Nuvola apps important orange.svg: David Vignoni (original), Bastique (SVG), Rocket000 (recolored)Derivative work: Bazi - File:Under construction icon-blue.svg + File:Nuvola apps important orange.svg, LGPL" height="125" width="150">&nbsp;
+<br></div><p> </p>
+  </td>
+  <td width="400" valign="top">
+  <ul><p>Se trata de modificaciones al producto, generando nuevas versiones del mismo.</p></ul>
+  </td>
+ </tr>
+
+ <tr>
+  <td width="180" valign="top">
+  <p style="text-align: center;"><b>Documentación</b></p><div style="text-align: center;">
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-Documentacion.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://www.freepik.es/foto-gratis/composicion-de-libros-con-libro-abierto_1320550.htm
+Foto de Libro creado por freepik" height="100" width="150">&nbsp; <br></div><p></p>
+  </td>
+  <td width="400" valign="top">
+  <ul><p>Las tareas de documentación están presentes a lo largo de todo 
+el ciclo de vida del proyecto, por lo que muchos autores no la 
+consideran una etapa en sí misma.</p></ul>
+  </td>
+ </tr>
+
+</tbody></table></div><div align="justify"><p>La construcción de 
+software es un proceso que puede llegar a ser muy complejo y que exige 
+gran coordinación y disciplina del grupo de trabajo que lo desarrolle.<br></p><br><p></p></div></div><div class="book_chapter"><a name="ch659"></a><h3>2.1. Análisis.</h3><div align="justify"><p>Es
+ la primera etapa del proyecto, la más complicada y la que más depende 
+de la capacidad del analista. Está comprobado que los errores en esta 
+fase son los que mayor impacto tienen en el proyecto en su conjunto.<br></p>
+
+<p>En líneas generales, de esta fase obtendremos dos salidas:</p><div style="margin-left: 30px;" class="editor-indent"><ul><li><b>Documento </b><b>especificación de requisitos software</b>, que considerará tanto requisitos funcionales como no funcionales del sistema.</li><ul><li><b>Funcionales</b>:
+ qué funciones tendrá que realizar la aplicación. Qué respuesta dará la 
+aplicación ante todas las entradas. Cómo se comportará la 
+&nbsp;aplicación en situaciones inesperadas.</li><li><b>No funcionales</b>: tiempos de respuesta del programa, legislación aplicable, tratamiento ante la simultaneidad de peticiones, etc.<br></li></ul></ul>
+
+</div><div style="margin-left: 30px;" class="editor-indent"><p>Considerando un programa para la gestión de ventas de una cadena de tiendas, podríamos considerar como ejemplo de requisitos:</p>
+
+<table cellspacing="0" cellpadding="5" border="1" width="100%"> <tbody>
+<tr>
+  <td width="278" valign="top">
+  <p align="center"><b>Funcionales</b></p>
+  </td>
+  <td width="279" valign="top">
+  <p align="center"><b>No funcionales</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="288" valign="top">
+  <p>Si se desea que la lectura de los productos se realice mediante códigos de barras.</p>
+  </td>
+  <td width="288" valign="top">
+  <p>Los PCs
+  suministrados deberán ser de color azul por tratarse del color corporativo.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="288" valign="top">
+  <p>Si se van a
+  detallar las facturas de compra y sus formatos.</p>
+  </td>
+  <td width="288" valign="top">
+  <p>La venta online
+  tendrá que garantizar un servicio ininterrumpido a lo largo de año. La disponibilidad deberá ser 24x7.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="288" valign="top">
+  <p>Si los
+  trabajadores de las tiendas trabajan a comisión, tener información de las ventas de cada uno.</p>
+  </td>
+  <td width="288" valign="top">
+  <p>Los materiales
+  entregables deberán cumplir la normativa requerida por la comunidad europea en el sector del comercio.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="288" valign="top">
+  <p>Si se desea un control del stock en almacén.</p>
+  </td>
+  <td width="288" valign="top">
+  <p>La empresa debe hacer sus desarrollos de acuerdo a algún tipo de certificación. <br></p>
+  </td>
+ </tr>
+
+
+ <tr>
+  <td width="288" valign="top">
+  <p>La interfaz tiene que ser fácil de usar para usuarios con pocos conocimientos de informática.<br></p>
+  </td>
+  <td width="288" valign="top">
+  <p><br></p>
+  </td>
+ </tr>
+
+
+
+
+ <tr>
+  <td colspan="2" width="557" valign="top">
+  <p align="center"><b>..........</b></p>
+  </td>
+ </tr>
+</tbody></table><br></div><div style="margin-left: 30px;" class="editor-indent"><ul><li><b>Documento de diseño de arquitectura</b>,
+ que contiene la descripción de la estructura relacional global del 
+sistema y la especificación de lo que debe hacer cada una de sus partes,
+ así como la manera en que se combinan unas con otras. En ocasiones este
+ documento se genera como una de las primeras tareas de la fase de 
+diseño.<br></li></ul></div></div><div align="justify">Es imprescindible 
+una buena comunicación entre el analista y el cliente para que la 
+aplicación que se va a desarrollar cumpla con sus expectativas. Y habrá 
+que asegurar que se definen aspectos como los siguientes: 
+
+<div style="margin-left: 30px;" class="editor-indent"><ul>
+<li><!--[if !supportLists]--><!--[endif]-->La planificación de las reuniones que van a tener lugar.</li><li>Relación de los objetivos del usuario cliente y del sistema.</li>
+<li>Relación de objetivos prioritarios y temporización.</li><li>Mecanismos de actuación ante contingencias.<br></li><li>....<br></li></ul></div>
+<p><!--[if !supportLists]--><br></p><p></p></div></div><div class="book_chapter"><a name="ch661"></a><h3>2.2. Diseño.</h3><div align="justify"><div style="margin-left: 30px;" class="editor-indent"></div><p></p><p>En
+ este punto, ya sabemos lo que hay que hacer, el análisis ya ha definido
+ los requisitos y el documento de análisis arquitectónico identifica 
+cómo dividir el programa para afrontar su desarrollo, pero ¿cómo 
+hacerlo?.</p>
+
+Para cada bloque habrá que realizar un diseño en detalle, donde habrá que tomar decisiones importantes, tales como:<div style="margin-left: 30px;" class="editor-indent"><ul><li>Entidades y relaciones de las bases de datos.</li><li>Selección del lenguaje de programación que se va a utilizar.</li><li>Selección del sistema gestor de base de datos. <br></li><li>Determinar los algoritmos necesarios.</li><li>Herramientas a utilizar.<br></li></ul></div>
+
+<!--[if !supportLists]--><!--[endif]-->En líneas generales, de esta fase obtendremos dos salidas:<div style="margin-left: 30px;" class="editor-indent"><ul><li><b>Documento de Diseño del Software</b>, que recoge información de los aspectos anteriormente mencionados.</li><li><b>Plan de pruebas</b> a utilizar en la fase de pruebas, sin entrar en detalles de las mismas.<br></li></ul></div><p><!--[if !supportLists]--><!--[endif]--></p><b>Nota:</b>
+ en ocasiones, el diseño de arquitectura, que aquí ha sido tratado como 
+una labor a realizar en la fase de análisis, es considerado como una 
+primera tarea de la fase de diseño.<br></div></div><div class="book_chapter"><a name="ch655"></a><h3>2.3. Codificación.</h3><div align="justify"><p>Es la fase en donde se implementa el código fuente y se obtienen los
+ficheros en código máquina que es capaz de entender el ordenador.</p><p>En el siguiente libro,<a href="https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/mod/book/view.php?id=11063&amp;chapterid=561" target="_blank"> 1.B. Lenguajes de
+programación</a>, podrás aprender mucho más sobre la codificación y sus lenguajes de programación.<br></p></div></div><div class="book_chapter"><a name="ch662"></a><h3>2.4. Pruebas.</h3><div align="justify"><p>Una vez obtenido el software, la siguiente fase del ciclo de vida es la realización de pruebas.</p>
+
+<p>Normalmente, éstas se llevan a cabo sobre un conjunto de datos de 
+prueba, que consisten en una colección predefinida de datos límite a los
+ que la aplicación es sometida.</p>
+
+<p>La realización de pruebas es imprescindible para asegurar la validación y verificación del software construido.</p>
+
+<p>Entre todas las pruebas que se efectúan sobre el software podemos distinguir básicamente:</p>
+
+<ul><li>&nbsp;<b>Pruebas unitarias</b></li></ul>Consisten en probar, una
+ a una, las diferentes partes de software y comprobar su funcionamiento 
+(por separado, de manera independiente). Como resultado de las pruebas 
+unitarias se genera un <b>documento de procedimiento de pruebas</b>, que
+ tendrá como partida el plan de pruebas de la fase de diseño. Éste 
+incluye los resultados obtenidos y deben ser comparados con los 
+resultados esperados que se habrán determinado de antemano. 
+
+<p>JUnit es el entorno de pruebas unitarias para Java.</p>
+
+<ul><li><b>Pruebas de integración</b></li></ul>
+
+Consiste en la puesta en común de todos los programas desarrollados una 
+vez pasadas las pruebas unitarias de cada uno de ellos. Para las pruebas
+ de integración se genera un <b>documento de procedimiento de pruebas de integración</b>, que podrá partir de un plan de pruebas de integración si durante la fase de análisis fue generado. Al igual que en las
+pruebas unitarias los resultados esperados se compararán con los obtenidos.</div><div align="justify"><br></div><div align="justify"><br></div><div align="justify">En el siguiente <a href="https://www.genbeta.com/desarrollo/que-pruebas-debemos-hacerle-a-nuestro-software-y-para-que" target="_blank">enlace </a>encontrarás información interesante sobre los tipos de prueba que debemos hacer a nuestro software. &nbsp;<a href="https://fpdistancia.educa.madrid.org/mod/book/view.php?id=72249" target="_blank"> </a><br></div></div><div class="book_chapter"><a name="ch656"></a><h3>2.5. Verificación en cliente / Explotación.</h3><div align="justify"><p>Nuestro trabajo ya recoge todos los requisitos a los que tiene que dar respuesta y ha sido sometido a todo tipo de pruebas.<br></p><p>La verificación en cliente es la fase en donde el usuario final utiliza el sistema en un entorno de preproducción o
+pruebas, ya en sus propias instalaciones. Si todo va correctamente, el producto estará listo para ser pasado a
+producción (entorno de explotación).</p><p>El resultado de esta fase será el reporte de errores detectados o ejecutable final.<br></p>
+</div></div><div class="book_chapter"><a name="ch658"></a><h3>2.6. Mantenimiento.</h3><div align="justify"><p>El mantenimiento se define como el proceso de control, mejora y optimización del software tras la implantación.</p>
+
+<p>Por su naturaleza, el software es cambiante y deberá actualizarse y 
+evolucionar con el tiempo. Deberá ir adaptándose de forma paralela a las
+ mejoras del hardware en el mercado y afrontar situaciones nuevas que no
+ existían cuando el software se construyó.</p>
+
+<p>Además, siempre surgen errores que habrá que ir corrigiendo y nuevas versiones del producto mejores que las anteriores.</p>
+
+<p>Por todo ello, se pacta con el cliente un servicio de mantenimiento 
+de la aplicación (que también tendrá un coste temporal y económico).</p>
+
+<p>Su duración es la mayor en todo el ciclo de vida del software, ya que
+ también comprende las actualizaciones y evoluciones futuras del mismo.</p>
+
+Los tipos de cambios que hacen necesario el mantenimiento del software son los siguientes:
+<div style="margin-left: 30px;" class="editor-indent"><ul>
+<li><!--[endif]--><b>Correctivo</b>. Resuelve un error detectado.</li>
+<li><b>Evolutivo</b>. El cliente propone mejoras para el producto. Implica nuevos requisitos.</li>
+<li><b>Adaptativos. </b>El programa precisa adaptarse a las nuevas 
+tendencias del mercado, a nuevos componentes hardware, nuevas 
+condiciones especificadas por organismos reguladores, etc.<br></li>
+</ul></div>
+</div></div><div class="book_chapter"><a name="ch663"></a><h3>2.7. Documentación.</h3><div align="justify"><p>En realidad, la documentación no debe ser considerada como una etapa más
+en el desarrollo del proyecto, la elaboración de documentos es constante durante todo su ciclo de vida.</p>
+
+<p>Documentar un proyecto se hace necesario para dar toda la información
+ a los usuarios de nuestro software y para poder acometer futuras 
+revisiones.</p>
+
+<p>Una correcta documentación permitirá pasar de una etapa a otra de 
+forma clara y definida. También se hace imprescindible para la 
+reutilización de parte de los programas en otras aplicaciones, siempre y
+ cuando se desarrollen con diseño modular.</p>
+
+<p>De acuerdo al destinatario final de los documentos, podemos distinguir tres tipos:</p>
+<table cellspacing="0" cellpadding="5" border="1" width="100%"><tbody>
+<tr>
+  <td colspan="2" width="565" valign="top">
+  <p><b>Personal técnico en informática (analistas y programadores). Guías técnicas.</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="196" valign="top">
+  <p>Aspectos que quedan reflejados:</p>
+  </td>
+  <td width="369" valign="top">
+  <p>El diseño de la aplicación.</p>
+  <p>La codificación de los programas.</p>
+  <p>Las pruebas realizadas.</p>
+    </td>
+ </tr>
+ 
+<tr>
+  <td width="196" valign="top">
+  <p>¿Cuál es su objetivo?</p>
+  </td>
+  <td width="369" valign="top">
+  <p>Facilitar un correcto desarrollo, realizar correcciones en los programas y permitir un mantenimiento futuro.</p>
+  </td>
+ </tr>
+</tbody></table><br></div><div align="justify">
+<table cellspacing="0" cellpadding="5" border="1" width="100%"><tbody><tr>
+  <td colspan="2" width="565" valign="top">
+  <p><b>Usuarios (clientes). Guías de uso.</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="196" valign="top">
+  <p>Aspectos que quedan reflejados:</p>
+  </td>
+  <td width="369" valign="top">
+  <p>Descripción de la funcionalidad de la aplicación.</p>
+  <p>Forma de comenzar a ejecutar la aplicación.</p>
+  <p>Ejemplos de uso del programa.</p>
+  <p>Requerimientos software de la aplicación.</p>
+  <p>Solución de los posibles problemas que se pueden presentar.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="196" valign="top">
+  <p>¿Cuál es su objetivo?</p>
+  </td>
+  <td width="369" valign="top">
+  <p>Dar a los usuarios finales toda la información necesaria para utilizar la aplicación.</p>
+  </td>
+ </tr>
+</tbody></table></div><div align="justify"><br>
+<table cellspacing="0" cellpadding="5" border="1" width="100%"><tbody>
+<tr>
+  <td colspan="2" width="565" valign="top">
+  <p><b>Personal informático responsable de la instalación. Guías de instalación.</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="196" valign="top">
+  <p>Aspectos que quedan
+  reflejados:</p>
+  </td>
+  <td width="369" valign="top">
+  <p>Puesta en marcha.</p>
+  <p>Explotación.</p>
+  <p>Seguridad del sistema. <br></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="196" valign="top">
+  <p>¿Cuál es su objetivo?</p>
+  </td>
+  <td width="369" valign="top">
+  <p>Dar toda la
+  información necesaria para garantizar que la implantación de la aplicación se realice de forma segura, confiable y precisa.</p>
+  </td>
+ </tr>
+</tbody></table><br></div></div><div class="book_chapter"><a name="ch666"></a><h2>3. Relación hardware-software.</h2><div align="justify">
+<p>Al hablar de un ordenador, la relación hardware-software es 
+inseparable. El software se ejecuta sobre los dispositivos físicos y 
+éstos precisan del software para proporcionar sus funciones.</p><div style="text-align: center;">&nbsp;
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-Hardware.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia: 
+GFDL 1.2, https://commons.wikimedia.org/w/index.php?curid=1403966" height="100" width="150"><br></div><p></p><p></p><p></p>La
+ primera arquitectura hardware se estableció en 1946 por John Von 
+Neumann, &nbsp;véase en la siguiente figura los principales bloques que 
+la conforman.<p></p><p style="text-align: center;">&nbsp;
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-VonNeuman.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title=" Procedencia:
+ Material del módulo Entornos de desarrollo a distancia del MEC" height="181" width="571"><br></p><p></p><p></p><p>En la actualidad, los equipos todavía se basan en esos mismos conceptos.</p>Esta relación
+software-hardware la podemos poner de manifiesto desde dos puntos de vista:<p></p>
+
+<ul><li><!--[if !supportLists]--><b>Desde el punto de vista del sistema operativo </b></li></ul>
+
+<p>El sistema operativo es el encargado de coordinar al hardware durante
+ el funcionamiento del ordenador, actuando como intermediario entre éste
+ y las aplicaciones que están corriendo en un momento dado.</p>
+
+<p>Todas las aplicaciones necesitan recursos hardware durante su 
+ejecución (tiempo de CPU, espacio en memoria RAM, tratamiento de
+interrupciones, gestión de los dispositivos de entrada/salida, etc.). 
+Será
+siempre el sistema operativo el encargado de controlar todos estos 
+aspectos de manera "oculta" para las aplicaciones (y para el usuario).</p>
+
+<ul><li><!--[if !supportLists]--><b>Desde el punto de vista de las aplicaciones</b></li></ul>
+
+<p></p><p>Como ya sabemos, una aplicación no es otra cosa que un
+conjunto de programas y que éstos están escritos en algún lenguaje de
+programación que el hardware del equipo debe interpretar y ejecutar.</p><p></p>
+
+<p>Hay multitud de lenguajes de programación diferentes (como ya veremos
+ en su momento). Sin embargo, todos tienen algo en común: estar
+escritos con sentencias de un idioma que el ser humano puede aprender y 
+usar fácilmente. Por otra parte, el hardware de un ordenador sólo es 
+capaz de interpretar magnitudes físicas (ausencias o presencias de 
+tensión, luz ...) que, en informática, se traducen en secuencias de 0 y 1
+ (código binario). </p>
+
+<p>Esto nos hace plantearnos una cuestión: ¿Cómo será capaz el ordenador
+ de "entender" algo escrito en un lenguaje que no es el suyo?.</p>
+
+Como veremos a lo largo de esta unidad, tendrá que pasar algo (un 
+proceso de traducción de código) para que el ordenador ejecute las 
+instrucciones escritas en un lenguaje de programación.<br><p></p>
+</div></div><div class="book_chapter"><a name="ch660"></a><h2>4. Ciclos de vida del software.</h2><div align="justify"><p>Se puede definir el <b>ciclo de vida de un proyecto</b>
+ como: conjunto de fases o etapas, procesos y actividades requeridas 
+para ofertar, desarrollar, probar, integrar, explotar y mantener un 
+producto software.</p>
+
+Al principio, el desarrollo de una aplicación era un proceso 
+individualizado, carente de planificación donde únicamente se hacía una 
+codificación y prueba/depuración del código a desarrollar. Pero pronto 
+se detectaron muchos inconvenientes:<div style="margin-left: 30px;" class="editor-indent"><ul>
+<li>Dependencia total de la&nbsp; persona que programó.</li>
+<li>Se desconoce el progreso y la calidad del proyecto.</li>
+<li>Falta de flexibilidad ante cambios.</li>
+<li>Posible incremento del coste o incluso imposibilidad de completarlo.</li>
+<li>Puede no reflejar las necesidades del cliente.</li>
+
+</ul></div>
+<p><!--[if !supportLists]--><!--[endif]-->De ahí surgió la necesidad de 
+hacer desarrollos más estructurados, aportando valor añadido y calidad 
+al producto final, apareciendo el concepto de <b>ciclo de vida del software</b>. <br></p>Algunas ventajas que se consiguen son:<div style="margin-left: 30px;" class="editor-indent"><ul>
+<li>En las primeras fases, aunque no haya líneas de código, invertir en 
+pensar el diseño es avanzar en la construcción del sistema, pues facilitará la codificación.</li>
+<li>Asegura un desarrollo progresivo, con controles sistemáticos, que permite detectar defectos con mucha antelación.</li>
+<li>El seguimiento del proceso permite controlar los plazos de entrega retrasados y los costes excesivos.</li>
+<li>La documentación se realiza de manera formal y estandarizada 
+simultáneamente al desarrollo, lo que facilita la comunicación interna 
+entre el equipo de desarrollo y la de éste con los usuarios.</li>
+<li>Aumenta la visibilidad y la posibilidad de control para la gestión del proyecto.</li><li>Supone una guía para el personal de desarrollo, marcando las tareas a realizar en cada momento.</li>
+<li>Minimiza la necesidad de rehacer trabajo y los problemas de puesta a punto.</li>
+</ul></div>
+
+Diversos autores han planteado distintos modelos de ciclos de vida, pero
+ los más conocidos y utilizados son los citados a continuación:</div><div align="justify"><br></div><div align="justify"></div><div style="margin-left: 30px;" class="editor-indent"><div align="justify"><ul>
+<li><b><a href="https://es.wikipedia.org/wiki/Desarrollo_en_cascada#/media/File:El_modelo_de_desarrollo_en_cascada.svg" target="_blank">Modelo en cascada</a>.</b></li>
+</ul></div></div><div align="justify"><div style="margin-left: 30px;" class="editor-indent"><p>Es el modelo de vida clásico del software.</p><p>Se
+ pasa de unas etapas a otras sin retorno posible, cualquier error en las
+ fases iniciales ya no será subsanable aunque sea detectado más 
+adelante.</p> 
+
+<p>Este escaso margen de error lo hace prácticamente imposible de utilizar. Sólo es aplicable en pequeños desarrollos.</p>
+
+Todos los requisitos son planteados para hacer un único recorrido del proyecto.<b><br></b></div><div style="margin-left: 30px;" class="editor-indent"><b><br></b></div><div style="margin-left: 30px;" class="editor-indent"><ul><li><b><b><b>Modelo en cascada con realimentación.</b></b><br></b></li></ul></div><div style="margin-left: 30px;" class="editor-indent"><div><p>Es
+ uno de los modelos más utilizados. Proviene del modelo anterior, pero 
+se introduce una realimentación entre etapas, de forma que podamos 
+volver atrás en cualquier momento para corregir, modificar o depurar 
+algún aspecto. No obstante, si se prevén muchos cambios durante el 
+desarrollo no es el modelo más idóneo.</p>
+
+<p>Es el modelo perfecto si el proyecto es rígido (pocos cambios, poco evolutivo) y los requisitos están claros.</p>
+</div></div><div style="margin-left: 30px;" class="editor-indent"><div><ul><li><b><b>Modelos evolutivos.</b></b></li></ul></div></div><div style="margin-left: 30px;" class="editor-indent"><div><p>Son más modernos que los anteriores. Tienen en cuenta la naturaleza cambiante y evolutiva del software.</p>
+
+Distinguimos dos variantes:</div><br><div style="margin-left: 30px;" class="editor-indent"><div><ul><li><a href="https://orozcoangel3b.files.wordpress.com/2014/09/imagen7.jpg" target="_blank">Modelo iterativo incremental.</a></li></ul></div></div><div style="margin-left: 30px;" class="editor-indent"><div><p>Está basado en el modelo en cascada con realimentación,
+donde las fases se repiten y refinan, y van propagando su mejora a las fases
+siguientes.</p>
+
+<p>Cada iteración cubre una parte de los requisitos
+requeridos, generando versiones parciales y crecientes para el producto
+software en desarrollo. Cada versión obtenida será el punto de partida para la siguiente iteración.</p>
+
+Los incrementos a considerar en cada vuelta ya vienen establecidos desde las etapas iniciales.<br></div></div><div><br></div><div style="margin-left: 30px;" class="editor-indent"><div><ul><li><a href="https://es.wikipedia.org/wiki/Desarrollo_en_espiral#/media/File:ModeloEspiral.svg" target="_blank">Modelo en espiral.</a></li></ul><div><p>Se trata de un modelo iterativo como el anterior, pero
+en este caso, tras cada vuelta se lleva a cabo un análisis de riesgos y se
+determinan los objetivos a conseguir en las siguientes iteraciones. </p>
+
+Es un modelo muy abierto a cambios de requisitos, incluso una vez puesto
+ en marcha el proyecto. &nbsp;El modelo en espiral corre el riesgo de 
+alargarse excesivamente en el tiempo y aumentar el coste de su 
+desarrollo.</div><div><div><br></div><div><ul><li>Modelos ágiles.<br></li></ul></div><div>Se
+ trata de modelos que están ganando gran presencia en los desarrollos 
+software. Muy centrados en la satisfacción del cliente, muestran gran 
+flexibilidad a la aparición de nuevos requistitos, incluso durante el 
+desarrollo de la aplicación.</div><div>Al
+ tratarse de metodologías evolutivas, el desarrollo es incremental, pero
+ estos incrementos son cortos y están abiertos al solapado de unas fases
+ con otras. <br></div><div>La comunicación entre los integrantes del equipo de trabajo y de éstos con el cliente son constantes.</div><div>Un ejemplo de metodología ágil es <a href="https://proyectosagiles.org/" target="_blank">Scrum</a>.</div><br></div></div></div></div><p></p></div></div><div class="book_chapter"><a name="ch664"></a><h2>5. Herramientas de apoyo al desarrollo del software.</h2><div align="justify"><p>En
+ la práctica, para llevar a cabo varias de las etapas vistas en el punto
+ anterior contamos con herramientas informáticas, cuya finalidad 
+principal es automatizar las tareas y ganar fiabilidad y tiempo.</p>
+
+<p>Esto nos va a permitir centrarnos en los requerimientos del sistema y
+ el análisis del mismo, que son las causas principales de los fallos del
+ software.</p>
+
+<p>Las herramientas <b>CASE (Computer Aided Software Engineering)</b> 
+son un conjunto de aplicaciones que se utilizan en el desarrollo de 
+software con el objetivo de automatizar las fases del desarrollo y 
+reducir tanto costes como tiempo del proceso. Como consecuencia, se 
+consigue mejorar la productividad, la calidad del proceso y el resultado
+ final.<br></p>
+
+<p>¿En qué fases del proceso nos pueden ayudar?. En el diseño del 
+proyecto, en la codificación, en el diseño de su apariencia visual, 
+detección de errores…</p>En concreto, estas herramientas permiten:
+
+<div style="margin-left: 30px;" class="editor-indent"><ul><li><!--[if !supportLists]-->Mejorar la planificación del proyecto.</li><li>Dar agilidad al proceso.</li><li>Poder reutilizar partes del software en proyectos futuros.</li><li>Hacer que las aplicaciones respondan a estándares.</li><li>Mejorar la tarea del mantenimiento
+de los programas.</li><li>Mejorar el proceso de desarrollo, al permitir visualizar las fases de forma gráfica.<br></li></ul></div><p><u><b>CLASIFICACIÓN</b></u></p>
+
+<p>Normalmente, las herramientas CASE se clasifican en función de las fases del ciclo de vida del software en la que ofrecen ayuda:</p>
+
+<div style="margin-left: 30px;" class="editor-indent"><ul><li><b>U-CASE (Upper-Case)</b>: ofrece ayuda en las fases de planificación y análisis de requisitos.</li><li><b>M-CASE (Medium-Case)</b>: útil
+en análisis y diseño.</li><li><b>L-CASE (Lower-Case)</b>: ayuda
+en la programación del software, detección de errores del código, 
+depuración de programas y pruebas y en la generación de la documentación
+ del proyecto.<br></li></ul></div>Pulsa este <a href="https://es.wikipedia.org/wiki/Herramienta_CASE" target="_blank">enlace</a> para ver una ampliación de los tipos y ayudas
+concretas de la herramientas CASE.<br><p></p></div></div><div class="book_chapter"><a name="ch665"></a><h2>6. Frameworks.</h2><div align="justify"><p>Un framework es una estructura de ayuda al programador, en base a la cual podemos desarrollar proyectos sin partir desde cero.</p>
+
+<p>Se trata de una plataforma software donde están definidos programas 
+soporte, bibliotecas, lenguaje interpretado, etc., que ayuda a 
+desarrollar y unir los diferentes módulos o partes de un proyecto.<br></p><div style="text-align: center;">
+<img src="1.A.%20Desarrollo%20del%20software_files/T01-FrameWorks.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title=" Procedencia:
+ Material del módulo Entornos de desarrollo a distancia del MEC" height="180" width="180"><br>
+</div><br><p>Con el uso de framework podemos pasar más tiempo analizando
+ los requerimientos del sistema y las especificaciones técnicas de 
+nuestra aplicación, ya que la tarea laboriosa de los detalles de 
+programación queda resuelta.</p>
+
+<u>Ventajas de utilizar un framework:</u></div><div align="justify"><div style="margin-left: 30px;" class="editor-indent"><ul><li><b>Desarrollo rápido </b>de software.</li><li><b>Reutilización </b>de partes de código para otras aplicaciones.</li><li><b>Diseño </b>uniforme del software.<br></li></ul></div><u>Inconvenientes de utilizar un framework:</u><div style="margin-left: 30px;" class="editor-indent"><ul><li><b>Dependencia del framework.</b>
+ Posible dependencia del código respecto al framework utilizado (si 
+cambiamos de framework, habrá que reescribir parte de la aplicación).</li><li><b>Consumo de recursos.</b> La instalación y uso del framework en nuestro equipo consume bastantes recursos del sistema.<br></li></ul></div>
+
+<u>Ejemplos de Frameworks:</u>
+
+<div style="margin-left: 30px;" class="editor-indent"><ul><li><b>.NET
+</b>es un framework para desarrollar aplicaciones sobre Windows. Ofrece 
+el "Visual Studio .net" que nos da facilidades para construir 
+aplicaciones y su motor es el ".Net framework" que permite ejecutar 
+dichas aplicaciones. <br></li><li><b>Spring de Java</b>. Es un conjunto de bibliotecas (API's) para el
+desarrollo y ejecución de aplicaciones Java.</li><li><b>Qt. </b>Framework multiplataforma para el lenguaje C++. Admite adaptaciones para ser utilizado en otros lenguajes<b>.</b></li><li><b>A<b>ngular</b>.</b> Framework de Javascript para aplicaciones web.<b><br></b></li></ul></div>
+<p><br></p><br>
+</div></div></div>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/lib/requirejs.php/1564653989/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/lib/javascript.php/1564653989/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/lib/javascript.php/1564653989/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/lib/javascript.php/1564653989/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="1.A.%20Desarrollo%20del%20software_files/require.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("es",{
+ "Play": "Reproducción",
+ "Play Video": "Reproducción Vídeo",
+ "Pause": "Pausa",
+ "Current Time": "Tiempo reproducido",
+ "Duration Time": "Duración total",
+ "Remaining Time": "Tiempo restante",
+ "Stream Type": "Tipo de secuencia",
+ "LIVE": "DIRECTO",
+ "Loaded": "Cargado",
+ "Progress": "Progreso",
+ "Fullscreen": "Pantalla completa",
+ "Non-Fullscreen": "Pantalla no completa",
+ "Mute": "Silenciar",
+ "Unmute": "No silenciado",
+ "Playback Rate": "Velocidad de reproducción",
+ "Subtitles": "Subtítulos",
+ "subtitles off": "Subtítulos desactivados",
+ "Captions": "Subtítulos especiales",
+ "captions off": "Subtítulos especiales desactivados",
+ "Chapters": "Capítulos",
+ "You aborted the media playback": "Ha interrumpido la reproducción del vídeo.",
+ "A network error caused the media download to fail part-way.": "Un error de red ha interrumpido la descarga del vídeo.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "No se ha podido cargar el vídeo debido a un fallo de red o del servidor o porque el formato es incompatible.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "La reproducción de vídeo se ha interrumpido por un problema de corrupción de datos o porque el vídeo precisa funciones que su navegador no ofrece.",
+ "No compatible source was found for this media.": "No se ha encontrado ninguna fuente compatible con este vídeo."
+});
+
+    });
+});;
+
+require(['theme_boost/loader']);
+;
+require(["core/notification"], function(amd) { amd.init(16962, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });;
+require(["core/page_global"], function(amd) { amd.init(); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u00daltima modificaci\u00f3n","name":"Nombre","error":"Error","info":"Informaci\u00f3n","yes":"S\u00ed","no":"No","cancel":"Cancelar","confirm":"Confirmar","areyousure":"\u00bfEst\u00e0 seguro?","closebuttontitle":"Cerrar","unknownerror":"Error desconocido"},"repository":{"type":"Tipo","size":"Tama\u00f1o","invalidjson":"Cadena JSON no v\u00e1lida","nofilesattached":"No se han adjuntado archivos","filepicker":"Selector de archivos","logout":"Salir","nofilesavailable":"No hay archivos disponibles","norepositoriesavailable":"Lo sentimos, ninguno de sus repositorios actuales puede devolver archivos en el formato solicitado.","fileexistsdialogheader":"El archivo existe","fileexistsdialog_editor":"Un archivo con el mismo nombre ya se ha adjuntado al texto que est\u00e1 editando.","fileexistsdialog_filemanager":"Un archivo con ese nombre ya ha sido adjuntado","renameto":"Cambiar el nombre a \"{$a}\"","referencesexist":"Existen {$a} archivos de alias\/atajos que emplean este archivo como su or\u00edgen","select":"Seleccionar"},"admin":{"confirmdeletecomments":"Est\u00e1 a punto de eliminar comentarios, \u00bfest\u00e1 seguro?","confirmation":"Confirmaci\u00f3n"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"es"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random5d78cdbc0897a2'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5d78cdbc0897a2'); });
+})();
+//]]>
+</script>
+
+
+<div id="simple-translate"><div><div style="background-image: url(&quot;moz-extension://3d0f1562-8d0c-4266-89d9-6caec6baf35f/icons/512.png&quot;); height: 22px; width: 22px; top: 10px; left: 10px;" class="simple-translate-button "></div><div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: rgb(255, 255, 255);"><div class="simple-translate-result-wrapper" style="overflow: hidden;"><p class="simple-translate-result" style="color: rgb(0, 0, 0);"></p><p class="simple-translate-candidate" style="color: rgb(115, 115, 115);"></p></div></div></div></div></body></html>
