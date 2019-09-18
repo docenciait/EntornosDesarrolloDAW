@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html dir="ltr" xml:lang="es" class="yui3-js-enabled" lang="es"><head>
+    <title>1.B. Lenguajes de programación.</title>
+    <link rel="shortcut icon" href="https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/theme/image.php/boost/theme/1564653989/favicon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="moodle, 1.B. Lenguajes de programación.">
+<link rel="stylesheet" type="text/css" href="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/yui_combo.css"><script charset="utf-8" id="yui_3_17_2_1_1568802252476_8" src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/yui_combo_002.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1568802252476_18" src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/yui_combo.js" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/all.css">
+<link rel="stylesheet" type="text/css" href="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/print.css">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala","sesskey":"3sog3Rsjon","themerev":"1564653989","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1564653989","admin":"admin","svgicons":true,"usertimezone":"Europa\/Madrid","contextid":16719};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/theme\/yui_combo.php?m\/1564653989\/","combine":true,"comboBase":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/theme\/yui_combo.php?","ext":false,"root":"m\/1564653989\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_xp-form":{"requires":["base","node","event","handlebars","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-block_xp-rulepicker"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]},"moodle-atto_wordimport-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1564653989\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/lib\/javascript.php\/1564653989\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/aulavirtual3.educa.madrid.org\/ies.alonsodeavellan.alcala\/lib\/javascript.php\/1564653989\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/first.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/jquery-3.js"></script></head>
+
+<body id="page-mod-book-print" class="format-topics  path-mod path-mod-book gecko dir-ltr lang-es yui-skin-sam yui3-skin-sam aulavirtual3-educa-madrid-org--ies.alonsodeavellan.alcala pagelayout-embedded course-61 context-16719 cmid-11063 category-17 category-12  jsenabled">
+
+<div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Saltar a contenido principal</a>
+</div><script type="text/javascript" src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/yui_combo_003.js"></script><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div><script type="text/javascript" src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<div id="page">
+    <div id="page-content">
+        <div role="main" id="yui_3_17_2_1_1568802252476_20"><span id="user-notifications"></span><span id="maincontent"></span><a onclick="window.print();return false;" class="hidden-print" href="#" id="yui_3_17_2_1_1568802252476_19"><img class="icon icon" alt="Imprimir el Libro Completo" title="Imprimir el Libro Completo" src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/book.svg">Imprimir el Libro Completo</a>    <a name="top"></a>
+    <h1>1.B. Lenguajes de programación.</h1>    <p class="book_summary"></p>
+    <div class="book_info"><table>
+    <tbody><tr>
+    <td>Sitio:</td>
+    <td><a href="https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala">ALONSO DE AVELLANEDA</a></td>
+    </tr><tr>
+    <td>Curso:</td>
+    <td>Entornos de desarrollo</td>
+    </tr><tr>
+    <td>Libro:</td>
+    <td>1.B. Lenguajes de programación.</td>
+    </tr><tr>
+    <td>Imprimido por:</td>
+    <td>Iván Jiménez Utiel</td>
+    </tr><tr>
+    <td>Día:</td>
+    <td>miércoles, 18 de septiembre de 2019, 12:24</td>
+    </tr>
+    </tbody></table></div>
+
+    <div class="book_toc_numbered"><a name="toc"></a><h2>Tabla de contenidos</h2><ul><li><a title="1. Lenguajes de programación." href="#ch561">1. Lenguajes de programación.</a></li><li><a title="2. Clasificación de los lenguajes de programación." href="#ch569">2. Clasificación de los lenguajes de programación.</a><ul><li><a title="2.1. Lenguajes de programación estructurados." href="#ch570">2.1. Lenguajes de programación estructurados.</a></li><li><a title="2.2. Lenguajes de programación orientados a objetos." href="#ch571">2.2. Lenguajes de programación orientados a objetos.</a></li></ul></li><li><a title="3. Código fuente, objeto y ejecutable." href="#ch572">3. Código fuente, objeto y ejecutable.</a></li><li><a title="4. Compilación." href="#ch573">4. Compilación.</a><ul><li><a title="4.1. Análisis léxico." href="#ch574">4.1. Análisis léxico.</a></li><li><a title="4.2. Analizador sintáctico." href="#ch575">4.2. Analizador sintáctico.</a></li><li><a title="4.3. Analizador semántico." href="#ch576">4.3. Analizador semántico.</a></li></ul></li></ul></div><div class="book_chapter"><a name="ch561"></a><h2>1. Lenguajes de programación.</h2><div align="justify">
+<p>Se puede definir un Lenguaje de Programación como un idioma creado de
+ forma artificial, formado por un conjunto de símbolos y normas que se 
+aplican sobre un alfabeto para obtener un código, que el hardware de la 
+computadora pueda entender y ejecutar.</p>
+
+<p>Existen diversos tipos de lenguajes de programación que según las 
+necesidades del proyecto hace que unos sean más idóneos que otros. Es en
+ la etapa de diseño cuando típicamente se elige el lenguaje de 
+programación a utilizar y en la fase de desarrollo cuando se hace uso de
+ ellos.</p>
+
+<p><b>Los lenguajes de programación son los que nos permiten comunicarnos con el hardware del ordenador.</b></p>
+
+<p>En otras palabras, es muy importante tener muy clara la función de 
+los lenguajes de programación. Son los instrumentos que tenemos para que
+ el ordenador realice las tareas que necesitamos.</p>
+
+<p>Los lenguajes de programación han sufrido su propia evolución, como se puede apreciar en la figura siguiente:</p><div>
+<img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-LengProg.html" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title=" Procedencia:
+ Material del módulo Entornos de desarrollo a distancia del MEC" width="571" height="92">
+</div><div><br></div><div>
+
+<table cellspacing="0" cellpadding="5" border="1" width="100%"> <tbody>
+<tr>
+  <td colspan="2" width="576" valign="top">
+  <p align="center"><b>Características
+  de los Lenguajes de Programación</b></p>
+  </td>
+ </tr>
+
+ <tr>
+  <td width="158" valign="top">
+  <p align="center"><b>Lenguaje</b></p>
+  </td>
+  <td width="418" valign="top">
+  <p align="center"><b>Características</b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="158" valign="top">
+  <p align="center">Máquina</p>
+  </td>
+  <td width="418" valign="top">
+  <p>Sus instrucciones son combinaciones de unos y ceros.</p>
+  <p>Es el único lenguaje que entiende directamente el ordenador. No necesita traducción.</p>
+  <p>Fue el primer lenguaje utilizado.</p>
+  <p>Es único para cada procesador (no es portable entre arquitecturas hardware).</p>
+  <p>Hoy día nadie programa directamente en este lenguaje.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="158" valign="top">
+  <p align="center">Ensamblador</p>
+  </td>
+  <td width="418" valign="top">
+  <p>Sustituyó al lenguaje máquina para facilitar la labor de programación.</p>
+  <p>En lugar de unos y ceros se programa usando mnemotécnicos
+  (instrucciones complejas).</p>
+  <p>Necesita traducción al lenguaje máquina para poder ejecutarse.</p>
+  <p>Sus instrucciones son sentencias que hacen referencia a la ubicación física de los archivos en el equipo.</p>
+  <p>Es difícil de utilizar.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="158" valign="top">
+  <p align="center">Alto nivel basados en código.</p>
+  </td>
+  <td width="418" valign="top">
+  <p>Sustituyeron al lenguaje ensamblador para facilitar más la labor de programación.</p>
+  <p>En lugar de mnemotécnicos, se utilizan sentencias y órdenes  derivadas del idioma inglés.</p>
+  <p>Necesita traducción al lenguaje máquina.</p>
+  <p>Muy próximos al razonamiento humano.</p>
+  <p>Son los más utilizados hoy día.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="158" valign="top">
+  <p align="center">Alto nivel basados en entornos visuales.</p>
+  </td>
+  <td width="418" valign="top">
+  <p>En lugar de sentencias escritas, se programa gráficamente usando el ratón y diseñando directamente la apariencia del software.</p>
+  <p>Se genera un código de alto nivel equivalente de forma automática.<br></p></td></tr></tbody></table><br></div><p></p></div></div><div class="book_chapter"><a name="ch569"></a><h2>2. Clasificación de los lenguajes de programación.</h2><div align="justify"><p></p><p>Podemos clasificar los distintos tipos de Lenguajes de Programación en base a distintos criterios:</p>
+<u><b>Según lo cerca que esté del lenguaje humano</b></u><ul><li><b>Lenguajes de programación de alto nivel</b>.
+ Por su esencia, están más próximos al razonamiento humano. Son 
+independientes a la arquitectura del ordenador, por lo que para su 
+ejecución precisan traducción al lenguaje máquina, pueden ser ejecutados
+ en cualquier plataforma. </li></ul><p>
+
+</p><ul><li>
+<b>Lenguajes de programación de bajo nivel</b>. Están más próximos al funcionamiento interno de la computadora. Tienen muy buenos rendimientos. Tenemos:</li></ul><p>
+
+</p><div><ul><li><b>Lenguaje máquina</b>. Se programan sus registros directamente con 0s y 1s. Difícil de programar y resolver errores.</li><li><b>Lenguaje ensamblador</b>.
+ Se trata de un primer nivel de abstracción respecto al lenguaje 
+máquina, aunque conceptualmente está mucho más cercano al equipo que al 
+razonamiento humano.<br></li></ul></div><p>
+</p><u><b>Lenguajes interpretados vs compilados</b></u><ul><li><b>Lenguaje compilado</b>.
+ El programa se traduce con un programa llamado compilador, que crea un 
+fichero binario ejecutable particular para un tipo de máquina. Este 
+ejecutable ya no necesita ningún otro programa para ser utilizado. Por 
+ejemplo <b>C++</b>.</li><li><b>Lenguaje interpretado</b>.
+ El programa es transformado a un formato acordado (bytecode), no 
+interpretable directamente por ningún tipo de máquina. Posteriormente se
+ utilizarán diferentes intérpretes (dependiendo de la plataforma donde 
+se ejecuta), para conseguir el código máquina correspondiente. Por 
+ejemplo, <b>Java</b>.<br></li></ul><u><b>Lenguajes imperativos vs declarativos</b></u><ul><li>En la <b>programación imperativa</b>
+ se describe paso a paso un conjunto de instrucciones que deben 
+ejecutarse para variar el estado del programa y hallar la solución, es 
+decir, un algoritmo en el que se describen los pasos necesarios para 
+solucionar el problema. P.e. <b>Basic</b>, <b>C</b>, <b>C++</b>, <b>Fortran</b>, <b>Pascal</b>, <b>Perl</b>, <b>PHP</b>, <b>Java</b>, lenguajes ensamblador.</li><li>En la <b>programación declarativa</b>
+ las sentencias que se utilizan describen el problema que se quiere 
+solucionar, pero no las instrucciones necesarias para hacerlo. Algunos 
+ejemplos son:</li></ul><div><ul><li>&nbsp;Lógicos: <b>prolog</b>.</li><li>Algebraicos: <b>SQL</b>.<br></li><li>Funcionales: <b>Haskell</b>.<br></li></ul></div><p>
+
+</p><p></p><b><u>Según la técnica de programación utilizada</u>
+
+</b><ul><li><b>Lenguajes de programación estructurados</b>. Usan la técnica de programación estructurada. Ejemplos:
+<b>Pascal</b>, <b>C</b>, etc.</li><li><b>Lenguajes de programación orientados a objetos (POO)</b>. Usan la técnica de programación orientada a objetos.
+Ejemplos: <b>C++</b> (C plus plus), <b>Java</b>, <b>Ada</b>, <b>C#,</b> <b>.Net,</b> etc. <br></li><li><b>Lenguajes de programación visuales</b>.
+ Basados en las técnicas anteriores, permiten programar gráficamente, 
+posteriormente se obtiene un código equivalente de forma automática. 
+Ejemplos: <b>Visual Basic.Net</b>, <b>C#,</b><b> .Net</b>, etc.</li></ul><div><br></div><div><br></div><p></p>
+</div></div><div class="book_chapter"><a name="ch570"></a><h3>2.1. Lenguajes de programación estructurados.</h3><div align="justify"><p>Aunque
+ los requerimientos actuales de software son bastante más complejos de 
+lo que la técnica de programación estructurada es capaz, es necesario 
+por lo menos conocer las bases de los lenguajes de programación 
+estructurados, ya que a partir de ellos se evolucionó hasta otros 
+lenguajes y técnicas más completas (orientada a
+eventos u objetos) que son las que se usan actualmente.</p>
+
+La programación estructurada se define como una técnica para escribir 
+lenguajes de programación que permite sólo el uso de tres tipos de 
+sentencias o estructuras de control:<div style="margin-left: 30px;" class="editor-indent"><ul><li>Sentencias secuenciales.</li><li>Sentencias selectivas (condicionales).</li><li>Sentencias repetitivas (iteraciones o
+bucles).<br></li></ul></div><div style="margin-left: 30px;" class="editor-indent">&nbsp;&nbsp;
+<img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-LengEst.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://commons.wikimedia.org/w/index.php?curid=31447241
+De Joliv - Trabajo propio, CC BY-SA 3.0" width="150" height="147">
+<br></div></div><div align="justify">Los lenguajes de programación que 
+se basan en la programación estructurada reciben el nombre de lenguajes 
+de programación estructurados.</div><div align="justify"><br><p>La programación estructurada fue de gran éxito por su sencillez a la hora de construir y leer programas.</p>
+
+<p>Fue sustituida por la programación modular, que permitía dividir los 
+programas grandes en trozos más pequeños (siguiendo la conocida técnica 
+"divide y vencerás").
+A su vez, luego triunfaron los lenguajes orientados a objetos y de ahí a
+ la
+programación visual (siempre es más sencillo programar gráficamente que 
+en código, ¿no crees? ).</p>
+
+<b>VENTAJAS DE LA PROGRAMACIÓN ESTRUCTURADA</b><div style="margin-left: 30px;" class="editor-indent">
+
+</div><div style="margin-left: 30px;" class="editor-indent"><ul><li><!--[if !supportLists]--><!--[endif]-->Los programas son fáciles de leer, sencillos y rápidos.</li><li>El mantenimiento de los programas es sencillo.</li><li>La estructura del programa es sencilla y clara.<br></li></ul></div><b>INCONVENIENTES</b>
+
+<div style="margin-left: 30px;" class="editor-indent"><ul><li><!--[if !supportLists]-->Todo el programa se concentra en un único bloque (si se hace demasiado grande es difícil manejarlo).</li><li>No permite reutilización eficaz de código,
+ya que todo va "en uno". Es por esto que a la programación estructurada 
+le sustituyó la programación modular, donde los programas se codifican 
+por módulos y bloques, permitiendo mayor funcionalidad.<br></li></ul></div>
+
+<p>La Programación estructurada evolucionó hacia la Programación 
+modular, que divide el programa en trozos de código llamados módulos con
+ una funcionalidad concreta, que podrán ser reutilizables.</p><br>
+</div></div><div class="book_chapter"><a name="ch571"></a><h3>2.2. Lenguajes de programación orientados a objetos.</h3><div align="justify"><p>Después
+ de comprender que la programación estructurada no es útil cuando los 
+programas tienen cierta entidad, es necesaria otra técnica de 
+programación que solucione este inconveniente. Nace así la Programación 
+Orientada a Objetos (en adelante, P.O.O.).</p>
+
+<p>Los lenguajes de programación orientados a objetos tratan a los 
+programas no como un conjunto ordenado de instrucciones (tal como 
+sucedía en la programación estructurada) sino como un conjunto de 
+objetos que colaboran entre ellos para realizar acciones.</p>
+
+<p><b>En la P.O.O. los programas se componen de objetos independientes entre sí que colaboran para realizar acciones.</b></p>&nbsp;<b>Algunas de sus características principales son</b>:
+
+<div style="margin-left: 30px;" class="editor-indent"><ul><li>Se define 
+clase como una colección de objetos con características similares. Si en
+ nuestro programa interactúan un conjunto de personas, la clase a 
+implementar será Persona y los objetos serán personas en particular 
+(Noa, Valeria, Mila ...).</li><li>Las clases definen una serie de 
+atributos, que caracterizan a cada objeto persona. Por ejemplo, el 
+atributo edad tendrá el valor 4 para Noa, 7 para Valeria ....</li><li>&nbsp;Las
+ clases definen una serie de métodos que corresponden a las acciones que
+ pueden llevar a cabo los objetos. Por ejemplo, en la clase Persona se 
+puede definir el método Saludar, que puede ser utilizado por Mila para 
+dar los buenos días. Estos métodos contendrán el código que da respuesta
+ a las acciones que implementan.</li><li>Mediante llamadas a los 
+métodos, unos objetos se comunican con otros produciéndose un cambio de 
+estado de los mismos. Esto se denomina envío de mensajes.<br></li><li>El código es más reutilizable.</li><li>Si hay algún error, es más fácil de localizar y depurar en una clase que en un programa entero.</li></ul></div><p><b>Algunos términos relativos a la programación orientada a objetos son:</b><br></p><div style="margin-left: 30px;" class="editor-indent"><table cellspacing="0" cellpadding="5" border="0">
+ <tbody><tr>
+  <td width="316" valign="top"><br>&nbsp;&nbsp;<img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-POO.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="200" height="128">
+<br>
+  <p><b>
+  </b></p>
+  </td>
+  <td width="22" valign="top">
+  <p><b>&nbsp;</b></p>
+  </td>
+  <td width="243" valign="top">
+  Clase<br>
+  Objeto<br>
+  Mensaje<br>Método<br>
+  Evento (sistema)<br <b="">Propiedad o atributo<br <b="">Estado interno<br <b="">Abstracción<br <b="">Encapsulamiento<br <b="">Poliformismo<br <b="">Herencia<br <="" td="">
+ </td></tr>
+</tbody></table><br></div><p>Algunos lenguajes orientados a objetos son: Ada, C++ (C plus plus), VB.NET, Delphi, Java,
+PowerBuilder, etc.</p></div><div align="justify">Nota: otros módulos del ciclo te permitirán conocer la programación orientada a objetos en profundidad.<br><p></p>
+</div></div><div class="book_chapter"><a name="ch572"></a><h2>3. Código fuente, objeto y ejecutable.</h2><div align="justify">
+Durante esta fase de codificación, el código pasa por diferentes 
+estados. La siguiente figura muestra el proceso de transformación del 
+código fuente a máquina para el lenguaje Java.<div style="text-align: center;">
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+ <tbody><tr>
+  <td width="149" valign="center">
+<img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-Java.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+Trabajo propio, CC BY-SA" width="150" height="81"><br>
+  </td>
+  <td width="61" valign="center">
+javac&nbsp;<img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-Flecha.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="63" height="40">
+  </td>
+  <td width="137" valign="center">
+<br><img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-Binario.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://www.freepik.es/foto-gratis/fondo-abstracto-del-codigo-binario_1371182.htm
+Foto de Fondo creado por kjpargeter" width="130" height="130"><br>&nbsp;
+  </td>
+  <td width="73" valign="center">
+java<br>
+<img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-Flecha%25201.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="63" height="40"><br>
+  </td>
+  <td width="161" valign="center">
+<img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-CPU.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://www.freepik.es/foto-gratis/primer-plano-de-la-placa-de-circuito-electronico-con-cpu-microchip-componentes-electronicos-de-fondo_1193001.htm
+Foto de Fondo creado por xb100" width="150" height="100"><br>
+  </td>
+ </tr>
+ <tr>
+  <td width="149" valign="top">
+ Código Fuente (.Java)
+  </td>
+  <td width="61" valign="top">
+  &nbsp;
+  </td>
+  <td width="137" valign="top">
+  ByteCode (.class)
+  </td>
+  <td width="73" valign="top">
+  &nbsp;
+  </td>
+  <td width="161" valign="top">
+  Código máquina
+  </td>
+ </tr>
+</tbody></table><br>
+</div><p>Por lo tanto tendremos:</p>
+<table cellspacing="0" cellpadding="5" border="1" width="100%">
+ <tbody>
+<tr>
+  <td width="140" valign="top">
+  <p style="text-align: center;"><b>Código Fuente</b></p>
+  <p>
+<img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-Pluma.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://www.freepik.es/vector-gratis/mano-dibujada-pluma-aislada-sobre-fondo-blanco_2782976.htm" width="150" height="150"><br>
+</p>
+  <p><b>
+   </b><b></b></p>
+  </td>
+  <td width="437" valign="top">
+  <p>Conjunto de instrucciones que debe seguir el ordenador para 
+implementar el algoritmo. Por tanto, en el código fuente de un programa 
+está descrito por completo su funcionamiento.</p>
+  <p>Se trata de información conceptualmente más cercana al programador que a la máquina, que no es capaz de ejecutarlo directamente.<b></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="140" valign="top">
+  <p style="text-align: center;"><b>Código
+  Objeto</b></p>
+  <p><b>
+<img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-Binario%25201.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://www.freepik.es/foto-gratis/fondo-abstracto-del-codigo-binario_1371182.htm
+Foto de Fondo creado por kjpargeter" width="150" height="150"><br>
+</b></p>
+  <p><b>
+   
+  </b><b></b></p>
+  </td>
+  <td width="437" valign="top">
+  <p>Se trata de un código intermedio para los lenguajes interpretados, 
+por lo tanto no es directamente ejecutable por el equipo. Para que la 
+máquina pueda ejecutar el programa es necesario transformarlo al 
+lenguaje que ésta maneja con un intérprete.
+  El código objeto se obtiene mediante el uso de un compilador.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="140" valign="top">
+  <p style="text-align: center;"><b>Código Ejecutable</b></p>
+  <p><b>
+<img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-Teclado.jpg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://www.freepik.es/foto-gratis/primer-del-cuaderno-tabla-tecnologia-abierta_1047191.htm
+Foto de Fondo creado por valeria_aksakova" width="150" height="100"><br>
+</b></p>
+  <p><b>
+     </b><b></b></p>
+  </td>
+  <td width="437" valign="top">
+  <p>Es el código máquina resultante de enlazar los archivos de código 
+objeto con ciertas rutinas y bibliotecas necesarias. El sistema 
+operativo será el encargado de cargar el código ejecutable en memoria 
+RAM y de proceder a su ejecución. Ya es directamente inteligible por la 
+computadora.</p>
+  <p>Los programas compilados no producen código objeto. El proceso de 
+compilación ya realiza el paso de fuente a ejecutable directamente.</p>
+  </td>
+ </tr>
+</tbody></table>
+<br><p></p></div></div><div class="book_chapter"><a name="ch573"></a><h2>4. Compilación.</h2><div align="justify"><p>Tras
+ la codificación del programa es necesaria la transformación del código a
+ su formato máquina para que pueda ser ejecutado por los dispositivos. 
+El encargado de realizar esta traducción es el <b>compilador</b>.</p>
+
+<p>Como veíamos en otros apartados, en ocasiones los ficheros obtenidos 
+de la compilación ya tienen formato de código máquina (lenguajes 
+compilados), pero otras veces se trata de un código objeto intermedio 
+(lenguajes interpretados).</p>
+
+El proceso de compilación se realiza en tres fases:<div style="margin-left: 30px;" class="editor-indent"><ul>
+<li><b>Análisis léxico</b>. Conjunto de símbolos permitidos.</li>
+<li><b>Análisis sintáctico</b>. Normas de construcción permitidas de los símbolos del lenguaje.</li>
+<li><b>Análisis semántico</b>. &nbsp;Significado de las construcciones para hacer acciones válidas.<br></li>
+</ul></div><div style="text-align: center;">&nbsp;
+<img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-Compilacion.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+Trabajo propio, CC BY-SA" width="429" height="346"><br></div><p></p>
+</div></div><div class="book_chapter"><a name="ch574"></a><h3>4.1. Análisis léxico.</h3><div align="justify"><p>Wikipedia define el <a href="https://es.wikipedia.org/wiki/Analizador_l%C3%A9xico" target="_blank">analizador léxico</a> como:</p><table cellspacing="0" cellpadding="5" border="1" width="100%">
+ <tbody><tr>
+  <td width="576" valign="top">
+  <p>Un <b>analizador léxico</b>
+  es la primera fase de un compilador, consiste en un programa que recibe como
+  entrada el código fuente (secuencia de caracteres, normalmente
+  generada en un editor de textos) y produce una salida compuesta de <b>tokens
+  </b>(componentes léxicos) o símbolos. </p>
+  <p>Los tokens sirven para una posterior etapa del proceso de
+  traducción, siendo la entrada para el analizador sintáctico.</p>
+  <p>La especificación de
+  un lenguaje de programación a menudo incluye un conjunto de
+  reglas que definen el léxico. Estas reglas consisten comúnmente en expresiones regulares, que indican el conjunto
+  de posibles secuencias de caracteres que definen un token o lexema.</p>
+  <p>&nbsp;En algunos lenguajes de programación es necesario establecer patrones para caracteres
+  especiales (como el espacio en blanco) que la gramática pueda reconocer sin que constituya un token en sí.</p>
+  </td>
+ </tr>
+</tbody></table></div><div align="justify"><br></div><div align="justify"><p>Por
+ejemplo, en un lenguaje cuyos únicos lexemas sean: uno, dos, tres y
+cuatro.</p>
+
+<ul><li>El texto uno uno tres cuatro, estaría formado por&nbsp; cuatro
+tokens: “uno” ; “uno” ; “tres” ; “cuatro”</li></ul>
+
+<ul><li><!--[if !supportLists]-->El texto uno una tres cuatro, produciría un error a nivel léxico,
+ya que al iniciar la búsqueda de un token tras el primer uno, no encuentra un lexema reconocible.</li></ul>Mientras existan errores léxicos no es posible completar la compilación del programa.<br><p></p>
+</div></div><div class="book_chapter"><a name="ch575"></a><h3>4.2. Analizador sintáctico.</h3><div align="justify"><p>Se evalúa la corrección del código de acuerdo con la gramática del lenguaje.</p>
+
+<p>Por ejemplo, la frase: “el compilar. error, desarrollo puede grave 
+entornos” tiene elementos léxicos correctos pero no respetan la 
+gramática del castellano.</p>
+
+<p>Es el proceso más importante de la compilación. </p>
+
+<p><b>&nbsp;</b>Se va generando un <b>árbol sintáctico</b> que garantiza la estructura del programa.</p><p style="text-align: center;">
+<img src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/T01-Sintaxis.png" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" title="Procedencia:
+https://www.freepik.es/foto-gratis/primer-del-cuaderno-tabla-tecnologia-abierta_1047191.htm
+Foto de Fondo creado por valeria_aksakova" width="337" height="316"><br>
+</p><p>Mientras existan errores sintácticos no es posible completar la compilación del programa.<br></p><p></p>
+</div></div><div class="book_chapter"><a name="ch576"></a><h3>4.3. Analizador semántico.</h3><div align="justify"><p>El <b>análisis semántico</b> utiliza como entrada el árbol sintáctico y comprueba las restricciones de tipo y otras limitaciones
+semánticas.<br></p><p>Si atendemos a la frase: <i>“La abeja compila las montañas del garbanzo”</i>,
+ tanto desde el análisis léxico como sintáctico es correcta, pero no 
+tiene sentido. La semántica está relacionada con el significado.<br></p>
+
+<p></p>La herramienta fundamental es la <b>tabla de símbolos</b>, donde se guarda y usa la información de los objetos que se va encontrando en el texto fuente.<div style="margin-left: 30px;" class="editor-indent"><ul><li>Incluye los símbolos declarados (tipos, variables, etiquetas, funciones)
+y toda su información.</li><li>Si aparece una declaración, se añade el símbolo a la tabla de símbolos.</li><li>Si se hace referencia a un símbolo, se comprueba su validez en la tabla.<br></li></ul></div><p></p><u><b>Ejemplo 1</b></u><br>La sentencia “x = y + precio (200)” será válida si:<div style="margin-left: 30px;" class="editor-indent"><ul><li>Las variables x e y están declaradas y su tipo es compatible con la operación suma (+).</li><li>La función precio existe, recibe un parámetro numérico y devuelve un valor numérico que pueda ser sumado.<br></li></ul></div><div><u><b>Ejemplo 2</b></u><br></div><div>Suponiendo sque tenemos la instrucción <i>res=
+valor1 + valor2;</i> en C y sabiendo que en C, “+” significa una suma de
+valores o una unión de cadenas. El análisis semántico comprobará que:</div><div style="margin-left: 30px;" class="editor-indent"><div><ul><li>valor1 y valor2 tengan datos que son compatibles.</li><li>El operador + sea aplicable al tipo de datos de las variables.<br></li></ul></div></div><div><br></div><p></p>
+</div></div></div>
+    </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/lib/requirejs.php/1564653989/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/lib/javascript.php/1564653989/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/lib/javascript.php/1564653989/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/lib/javascript.php/1564653989/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="1.B.%20Lenguajes%20de%20programaci%C3%B3n_files/require.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://aulavirtual3.educa.madrid.org/ies.alonsodeavellan.alcala/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("es",{
+ "Play": "Reproducción",
+ "Play Video": "Reproducción Vídeo",
+ "Pause": "Pausa",
+ "Current Time": "Tiempo reproducido",
+ "Duration Time": "Duración total",
+ "Remaining Time": "Tiempo restante",
+ "Stream Type": "Tipo de secuencia",
+ "LIVE": "DIRECTO",
+ "Loaded": "Cargado",
+ "Progress": "Progreso",
+ "Fullscreen": "Pantalla completa",
+ "Non-Fullscreen": "Pantalla no completa",
+ "Mute": "Silenciar",
+ "Unmute": "No silenciado",
+ "Playback Rate": "Velocidad de reproducción",
+ "Subtitles": "Subtítulos",
+ "subtitles off": "Subtítulos desactivados",
+ "Captions": "Subtítulos especiales",
+ "captions off": "Subtítulos especiales desactivados",
+ "Chapters": "Capítulos",
+ "You aborted the media playback": "Ha interrumpido la reproducción del vídeo.",
+ "A network error caused the media download to fail part-way.": "Un error de red ha interrumpido la descarga del vídeo.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "No se ha podido cargar el vídeo debido a un fallo de red o del servidor o porque el formato es incompatible.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "La reproducción de vídeo se ha interrumpido por un problema de corrupción de datos o porque el vídeo precisa funciones que su navegador no ofrece.",
+ "No compatible source was found for this media.": "No se ha encontrado ninguna fuente compatible con este vídeo."
+});
+
+    });
+});;
+
+require(['theme_boost/loader']);
+;
+require(["core/notification"], function(amd) { amd.init(16719, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });;
+require(["core/page_global"], function(amd) { amd.init(); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u00daltima modificaci\u00f3n","name":"Nombre","error":"Error","info":"Informaci\u00f3n","yes":"S\u00ed","no":"No","cancel":"Cancelar","confirm":"Confirmar","areyousure":"\u00bfEst\u00e0 seguro?","closebuttontitle":"Cerrar","unknownerror":"Error desconocido"},"repository":{"type":"Tipo","size":"Tama\u00f1o","invalidjson":"Cadena JSON no v\u00e1lida","nofilesattached":"No se han adjuntado archivos","filepicker":"Selector de archivos","logout":"Salir","nofilesavailable":"No hay archivos disponibles","norepositoriesavailable":"Lo sentimos, ninguno de sus repositorios actuales puede devolver archivos en el formato solicitado.","fileexistsdialogheader":"El archivo existe","fileexistsdialog_editor":"Un archivo con el mismo nombre ya se ha adjuntado al texto que est\u00e1 editando.","fileexistsdialog_filemanager":"Un archivo con ese nombre ya ha sido adjuntado","renameto":"Cambiar el nombre a \"{$a}\"","referencesexist":"Existen {$a} archivos de alias\/atajos que emplean este archivo como su or\u00edgen","select":"Seleccionar"},"admin":{"confirmdeletecomments":"Est\u00e1 a punto de eliminar comentarios, \u00bfest\u00e1 seguro?","confirmation":"Confirmaci\u00f3n"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"es"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random5d8205cd5d4c32'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5d8205cd5d4c32'); });
+})();
+//]]>
+</script>
+
+
+<div id="simple-translate"><div><div style="background-image: url(&quot;moz-extension://3d0f1562-8d0c-4266-89d9-6caec6baf35f/icons/512.png&quot;); height: 22px; width: 22px; top: 10px; left: 10px;" class="simple-translate-button "></div><div class="simple-translate-panel " style="width: 300px; height: 200px; top: 0px; left: 0px; font-size: 13px; background-color: rgb(255, 255, 255);"><div class="simple-translate-result-wrapper" style="overflow: hidden;"><p class="simple-translate-result" style="color: rgb(0, 0, 0);"></p><p class="simple-translate-candidate" style="color: rgb(115, 115, 115);"></p></div></div></div></div></body></html>
