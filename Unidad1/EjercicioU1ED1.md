@@ -162,7 +162,7 @@ Se trata de diseñar una aplicación para una tienda especializada en vender pro
 
 La tienda desea trabajar con software libre. Además, desea explícitamente que la aplicación sea capaz de cumplir las siguientes tareas:
 
-```
+
 * Proporcionar facturas de las ventas.
 * Llevar la cuenta de lo que vende cada trabajador.
 * Controlar el stock de productos en almacén.
@@ -171,15 +171,15 @@ La tienda desea trabajar con software libre. Además, desea explícitamente que 
 * El tiempo de respuesta de la aplicación ha de ser lo menor posible.
 * No se podrán procesar dos peticiones a la vez, aunque haya varios equipos funcionando simultáneamente.
 * La empresa también quiere almacenar información de sus trabajadores: DNI, nombre, apellidos, número de la Seguridad Social, fecha de nacimiento, teléfono y localidad. Asimismo, de los productos interesa almacenar: código, marca, nombre comercial, precio, cantidad.
-```
+
 
 Tendrás que diseñar una planificación del proyecto de desarrollo de ese software que cumpla con las premisas estudiadas en la presente unidad de trabajo.
 
 Esencialmente, el proyecto se divide en los siguientes apartados:
 
-    * Sintetiza el análisis de requerimientos del sistema para nuestro cliente. Plantea el diseño y determina el modelo de ciclo de vida más idóneo para esta aplicación.
+   * Sintetiza el análisis de requerimientos del sistema para nuestro cliente. Plantea el diseño y determina el modelo de ciclo de vida más idóneo para esta aplicación.
     
-    * Planifica la codificación, indicando el lenguaje de programación y las herramientas que usarías para la obtención del código fuente, objeto y ejecutable, explicando por qué eliges esas herramientas.
+   * Planifica la codificación, indicando el lenguaje de programación y las herramientas que usarías para la obtención del código fuente, objeto y ejecutable, explicando por qué eliges esas herramientas.
     
-    *Planifica las restantes fases del ciclo de vida, indicando en cada una el objetivo que persigues y cómo lo harías.
+   *Planifica las restantes fases del ciclo de vida, indicando en cada una el objetivo que persigues y cómo lo harías.
 
