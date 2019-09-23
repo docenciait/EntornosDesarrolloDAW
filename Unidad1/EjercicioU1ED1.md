@@ -146,7 +146,34 @@ java MultiplicaNumeros
 
 Se ejecutará una ventana con la solicitud de los datos.
 
+Posteriormente podemos ver el *bytecode* con el siguiente comando:
 
+```
+$ javap -c -p MultiplicaNumeros 
+Compiled from "MultiplicaNumeros.java"
+class MultiplicaNumeros {
+  MultiplicaNumeros();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: ldc           #2                  // String Ingrese el entero 1:
+       2: invokestatic  #3                  // Method javax/swing/JOptionPane.showInputDialog:(Ljava/lang/Object;)Ljava/lang/String;
+       5: astore_1
+       6: ldc           #4                  // String Ingrese el entero 2:
+       8: invokestatic  #3                  // Method javax/swing/JOptionPane.showInputDialog:(Ljava/lang/Object;)Ljava/lang/String;
+      11: astore_2
+      12: aload_1
+      13: invokestatic  #5                  // Method java/lang/Integer.parseInt:(Ljava/lang/String;)I
+      16: istore_3
+      17: aload_2
+      18: invokestatic  #5                  // Method java/lang/Integer.parseInt:(Ljava/lang/String;)I
+      21: istore        4
+
+```
 
 ### Ejercicio 4. Herramientas Ágiles
 
