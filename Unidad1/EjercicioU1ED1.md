@@ -33,6 +33,41 @@ Resulatdo :10
 
 * Podéis ver con Geany el fichero resultante que estará lleno de caracteres extraños, no es más que el ejecutable binario
 
+Ahora podemos ver la **Tabla de Símbolos** de esta forma:
+
+```
+$ nm -C -f sysv ejemploc1
+
+
+Símbolos de ejemploc1:
+
+Nombre                Valor           Clase        Tipo         Tamaño           Línea Sección
+
+__bss_start         |0000000000201030|   B  |            NOTYPE|                |     |.bss
+completed.6972      |0000000000201030|   b  |            OBJECT|0000000000000001|     |.bss
+__cxa_finalize@@GLIBC_2.2.5|                |   w  |              FUNC|                |     |*UND*
+__data_start        |0000000000201020|   D  |            NOTYPE|                |     |.data
+data_start          |0000000000201020|   W  |            NOTYPE|                |     |.data
+deregister_tm_clones|00000000000005b0|   t  |              FUNC|                |     |.text
+__do_global_dtors_aux|0000000000000640|   t  |              FUNC|                |     |.text
+__do_global_dtors_aux_fini_array_entry|0000000000200de0|   t  |            OBJECT|                |     |.fini_array
+__dso_handle        |0000000000201028|   D  |            OBJECT|                |     |.data
+_DYNAMIC            |0000000000200df0|   d  |            OBJECT|                |     |.dynamic
+_edata              |0000000000201030|   D  |            NOTYPE|                |     |.data
+_end                |0000000000201038|   B  |            NOTYPE|                |     |.bss
+_fini               |0000000000000754|   T  |              FUNC|                |     |.fini
+frame_dummy         |0000000000000680|   t  |              FUNC|                |     |.text
+__frame_dummy_init_array_entry|0000000000200dd8|   t  |            OBJECT|                |     |.init_array
+__FRAME_END__       |00000000000008b8|   r  |            OBJECT|                |     |.eh_frame
+_GLOBAL_OFFSET_TABLE_|0000000000201000|   d  |            OBJECT|                |     |.got.plt
+__gmon_start__      |                |   w  |            NOTYPE|                |     |*UND*
+__GNU_EH_FRAME_HDR  |0000000000000774|   r  |            NOTYPE|                |     |.eh_frame_hdr
+_init               |0000000000000530|   t  |              FUNC|                |     |.init
+__init_array_end    |0000000000200de0|   t  |            NOTYPE|                |     |.init_array
+__init_array_start  |0000000000200dd8|   t  |            NOTYPE|                |     |.init_array
+
+```
+
 Ahora realizaremos lo siguiente, utilizaremos la opción S
 
 ```
