@@ -62,6 +62,18 @@ $ javac com/avellaneda/contabilidad/MiClase.java
 $ java com.avellaneda.contabilidad.MiClase 
 MiClase
 ```
+Podéis instalar tree (apt install tree) para ver la estructura:
 
+```bash
+$ tree com/
+com/
+└── avellaneda
+    └── contabilidad
+        ├── MiClase.class
+        └── MiClase.java
+
+```
+
+* Ahora crea otro similar en eclipse y observa cómo se crea la estructura de carpetas.
 
 
