@@ -12,7 +12,7 @@ Asimismo, si un paquete está conformado por una clase se llamará:
 
 `import es.avellaneda.contabilidad.MiClase`
 
-Y si quiero importar todas las clases del paquete lo hago con un ** * ** :
+Y si quiero importar todas las clases del paquete lo hago con un `*` :
 `import es.avellaneda.contabilidad.*`
 
 La API de Java está organizada mediante paquetes. La clase **Scanner** se importa mediante: `import java.util.Scanner`
