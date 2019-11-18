@@ -17,6 +17,7 @@ La MV se deja preinstalada pero se tiene que realizar el resto de instalaciones 
 * Pasos para instalar Eclipse
 * Pasos para instalar Netbeans
 * Configuración de las variables de entorno necesarias
+* Crear un acceso directo para ambos IDEs.
 * Ejecución de ambos entornos Netbeans y Eclipse.
 
 Después se debe realizar lo siguiente:
