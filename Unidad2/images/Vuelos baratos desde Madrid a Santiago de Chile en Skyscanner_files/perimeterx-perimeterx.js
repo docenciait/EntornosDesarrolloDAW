@@ -1,0 +1,2 @@
+(window.jsTagManagerJsonpCallback=window.jsTagManagerJsonpCallback||[]).push([[61],{131:function(a,n,p){"use strict";p.r(n);var e=p(25);n.default=function(a,n){var p=e.a.getWindow();p._pxAppId="PXrf8vapwA",n("//client.perimeterx.net/".concat(p._pxAppId,"/main.min.js"))}}}]);
+//# sourceMappingURL=perimeterx-perimeterx.ceb9ef69.chunk.js.map
